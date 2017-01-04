@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+    <head>
+        <title>Problem1 Routing</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+        <link href="table.css" rel="stylesheet" type="text/css"/>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-mocks.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+        <script src="app.js" type="text/javascript"></script>
+        <script src="views/services.js" type="text/javascript"></script>
+        <script src="views/AllPersons/allPersonsController.js" type="text/javascript"></script>
+    </head>
+    <body ng-controller="Controller1">
+
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#/"><i class="fa fa-home"></i>All Persons</a></li>
+                    <li><a href="#newPerson"><i class="fa fa-comment"></i>New Person</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+        <!--<div class="main">-->
+            <div ng-view></div>
+        <!--</div>-->
+    </body>
+</html>
